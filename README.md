@@ -21,7 +21,7 @@
 ## Installation  
 - Clone the repository:  
    ```bash  
-   git clone https://github.com/kasun-dil/tookcar.git
+   git clone https://github.com/kasun-dil/TooKCar-Managment-System.git
 
 - Open the solution file (.sln) in Visual Studio.
 - Set up the MySQL database using the provided schema.
