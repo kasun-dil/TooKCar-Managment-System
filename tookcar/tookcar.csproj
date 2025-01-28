@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DE9FD85E-486F-4B96-9AA8-E2222D30DE50}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>tookcar</RootNamespace>
+    <AssemblyName>tookcar</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="cardet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cardet.Designer.cs">
+      <DependentUpon>cardet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="carupdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="carupdate.Designer.cs">
+      <DependentUpon>carupdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboard1.Designer.cs">
+      <DependentUpon>dashboard1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DGVPrinter.cs" />
+    <Compile Include="garagedet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="garagedet.Designer.cs">
+      <DependentUpon>garagedet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="garageupdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="garageupdate.Designer.cs">
+      <DependentUpon>garageupdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inovice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inovice.Designer.cs">
+      <DependentUpon>inovice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ownerdet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ownerdet.Designer.cs">
+      <DependentUpon>ownerdet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ownerupdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ownerupdate.Designer.cs">
+      <DependentUpon>ownerupdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rentdet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rentdet.Designer.cs">
+      <DependentUpon>rentdet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rentupdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rentupdate.Designer.cs">
+      <DependentUpon>rentupdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rentvip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rentvip.Designer.cs">
+      <DependentUpon>rentvip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="staffdet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staffdet.Designer.cs">
+      <DependentUpon>staffdet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="staffupdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staffupdate.Designer.cs">
+      <DependentUpon>staffupdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tookcarDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tookcarDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tookcarDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tookcarDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tookcarDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tookcarDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tookcarDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tookcarDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tookcarDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tookcarDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="tookcarDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tookcarDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="vipupdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="vipupdate.Designer.cs">
+      <DependentUpon>vipupdate.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="cardet.resx">
+      <DependentUpon>cardet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="carupdate.resx">
+      <DependentUpon>carupdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboard1.resx">
+      <DependentUpon>dashboard1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="garagedet.resx">
+      <DependentUpon>garagedet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="garageupdate.resx">
+      <DependentUpon>garageupdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inovice.resx">
+      <DependentUpon>inovice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ownerdet.resx">
+      <DependentUpon>ownerdet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ownerupdate.resx">
+      <DependentUpon>ownerupdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="rentdet.resx">
+      <DependentUpon>rentdet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rentupdate.resx">
+      <DependentUpon>rentupdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rentvip.resx">
+      <DependentUpon>rentvip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staffdet.resx">
+      <DependentUpon>staffdet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staffupdate.resx">
+      <DependentUpon>staffupdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="vipupdate.resx">
+      <DependentUpon>vipupdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="tookcarDataSet.xsc">
+      <DependentUpon>tookcarDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="tookcarDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tookcarDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tookcarDataSet.xss">
+      <DependentUpon>tookcarDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="tookcarDataSet1.xsc">
+      <DependentUpon>tookcarDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="tookcarDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tookcarDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tookcarDataSet1.xss">
+      <DependentUpon>tookcarDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="tookcarDataSet2.xsc">
+      <DependentUpon>tookcarDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="tookcarDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tookcarDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tookcarDataSet2.xss">
+      <DependentUpon>tookcarDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="tookcarDataSet3.xsc">
+      <DependentUpon>tookcarDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="tookcarDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tookcarDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tookcarDataSet3.xss">
+      <DependentUpon>tookcarDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="tookcarDataSet4.xsc">
+      <DependentUpon>tookcarDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="tookcarDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tookcarDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tookcarDataSet4.xss">
+      <DependentUpon>tookcarDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="tookcarDataSet5.xsc">
+      <DependentUpon>tookcarDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="tookcarDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>tookcarDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tookcarDataSet5.xss">
+      <DependentUpon>tookcarDataSet5.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="tookcar.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="tookcar_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>tookcar.mdf</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
